@@ -22,17 +22,8 @@ int IfNumber(string argument)
     int m;
     while (!int.TryParse(Console.ReadLine(), out m))
     {
-        Console.WriteLine("Это не число, поэтому повторите ввод, пожалуста:  ");
-        int a;   
-        if (!int.TryParse(Console.ReadLine(), out a))
-        {
-            Console.WriteLine("Это не число, поэтому повторите ввод, пожалуста:  ");
-        }
-        else
-        {
-            return m = a;
-        }
-   }
+        Console.WriteLine("Это не число, поэтому повторите ввод, пожалуста:  ");    
+    }
     return m;
 }
 
