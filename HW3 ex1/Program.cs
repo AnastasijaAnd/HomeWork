@@ -3,7 +3,7 @@
 
 int x = IfNumber("Введите пятизначное число: ");
 
-if (NumberCount(x) == 5 )
+if (NumberCount(x) == 5)
 {
     if ((MaybePalindrome(ArrayNumeral(x))))
     {
@@ -14,12 +14,11 @@ if (NumberCount(x) == 5 )
          Console.WriteLine($"Пятизначное число {x} - не является палиандромом.");
      }
 }
-else
+if (NumberCount(x) != 5)
 {
-    Console.WriteLine($"Вы ввели не пятизначное число, поэтому повторите ввод, пожалуста:  ");
-    int a = IfNumber("Введите пятизначное число: ");
-    a=x;
+  Console.WriteLine($"Вы ввели не пятизначное число.");  
 }
+
 
 int NumberCount(int x)
 {
