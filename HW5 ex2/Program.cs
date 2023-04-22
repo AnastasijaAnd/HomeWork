@@ -7,16 +7,16 @@ int minValue = InputMessage($"Введите минимальное значен
 int maxValue = InputMessage($"Введите максимальное значение для диапазона случайного числа:  ");
 int [] arrey = CreateArray(size,minValue,maxValue);
 PrintArray(arrey);
-int summa = SumNumbersWithEvenIndex(arrey);
+int summa = SumNumbersWithUnevenIndex(arrey);
 System.Console.WriteLine($"Сумма элементов с нечетными индексами в массиве {summa}.");
 
 
-int SumNumbersWithEvenIndex (int [] arrey)
+int SumNumbersWithUnevenIndex (int [] arrey)
 {
     int count =0;
     for (int i =0; i<arrey.Length;i++)
         {
-            if (i%2==0)
+            if (i%2!=0)
             {
                 count=count+arrey[i];
             }
