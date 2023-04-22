@@ -41,7 +41,6 @@ double[] CreateDoubleArray(int size, int minValue, int maxValue)
     Random x = new Random();
     for (int i = 0; i < size; i++)
     {
-        // array[i] = Math.Round(rand.Next(minValue, maxValue) + rand.NextDouble(), 2);
         array[i] = Math.Round(Convert.ToDouble(x.Next(minValue*10, maxValue*10)/10.00),2);
     }
     return array;
@@ -58,7 +57,6 @@ void PrintArray(double[] array)
 
 int InputMessage(string message)
 {
-    // System.Console.WriteLine(message);
     int result = IfNumber(message);
     return result;
 }

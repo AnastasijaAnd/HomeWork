@@ -47,7 +47,6 @@ Console.WriteLine();
 
 int InputMessage(string message)
 {
-    // System.Console.WriteLine(message);
     int result = IfNumber(message);
     return result;
 }
