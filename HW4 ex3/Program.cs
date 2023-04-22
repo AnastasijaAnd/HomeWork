@@ -1,0 +1,50 @@
+﻿/*Напишите программу, которая задаёт массив из 8 элементов
+и выводит их на экран.*/
+
+
+int size = InputMessage($"Введите длину массива:  ");
+int minValue = InputMessage($"Введите минимальное значение для диапазона случайного числа:  ");
+int maxValue = InputMessage($"Введите максимальное значение для диапазона случайного числа:  ");
+int [] arrey = CreateArray(size, minValue, maxValue);
+PrintArray(arrey);
+
+
+int [] CreateArray(int size,int minValue, int maxValue)
+{
+int [] nambers = new int[size];
+maxValue++;   
+Random rnd = new Random();
+for (int i = 0; i < size; i++)
+    {
+        nambers[i] = rnd.Next(minValue,maxValue);
+    }
+    return nambers;
+}
+
+void PrintArray(int[] numbers)
+{
+for (int i = 0; i < numbers.Length; i++)
+{
+Console.Write($"{numbers[i]} ");
+}
+Console.WriteLine();
+}
+
+int InputMessage(string message)
+{
+    int result = IfNumber(message);
+    return result;
+}
+
+int IfNumber(string argument)
+{
+    Console.Write(argument);
+    int m;
+    while (!int.TryParse(Console.ReadLine(), out m))
+    {
+        Console.WriteLine("Это не число, поэтому повторите ввод, пожалуста:  ");
+   }
+    return m;
+}
+
+
