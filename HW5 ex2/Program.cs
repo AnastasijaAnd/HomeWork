@@ -1,9 +1,6 @@
-﻿
-/* ДЗ5 2.Задайте одномерный массив, заполненный
+﻿/* ДЗ5 2.Задайте одномерный массив, заполненный
 случайными числами. Найдите сумму элементов с
-нечётными индексами.
-*/
-
+нечётными индексами.*/
 
 int size = InputMessage($"Введите длину массива:  ");
 int minValue = InputMessage($"Введите минимальное значение для диапазона случайного числа:  ");
@@ -27,7 +24,7 @@ int SumNumbersWithEvenIndex (int [] arrey)
     return count;
 }
 
-int [] CreateArray(int size,int minValue=100, int maxValue=999)
+int [] CreateArray(int size,int minValue, int maxValue)
 {
 int [] nambers = new int[size];
 maxValue++;   
