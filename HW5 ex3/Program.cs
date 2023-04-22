@@ -38,10 +38,11 @@ double[] CreateDoubleArray(int size, int minValue, int maxValue)
 {
     maxValue++;
     double[] array = new double[size];
-    Random rand = new Random();
+    Random x = new Random();
     for (int i = 0; i < size; i++)
     {
-        array[i] = Math.Round(rand.Next(minValue, maxValue) + rand.NextDouble(), 2);
+        // array[i] = Math.Round(rand.Next(minValue, maxValue) + rand.NextDouble(), 2);
+        array[i] = Math.Round(Convert.ToDouble(x.Next(minValue*10, maxValue*10)/10.00),2);
     }
     return array;
 }
