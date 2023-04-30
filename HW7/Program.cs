@@ -105,7 +105,7 @@ void ElementValue(int i, int j)
     }
 }
 
-int [,] CreateMatrix(int a=5, int b=5)
+int [,] CreateMatrix(int a=5, int b=4)
 {
     Random rnd = new Random();
     int[,] arr = new int[a, b];
