@@ -83,7 +83,7 @@ void CreateAndPrintDoubleRandomArray(int m=10, int n=10,int minValue=-10, int ma
 или же указание,что такого элемента нет.*/
 void Dz7z2()
 {
-Console.WriteLine("Введите позицию элемента в двумерном массиве в формате i,j: ");
+Console.Write("Введите позицию элемента в двумерном массиве в формате i,j: ");
 string input1 = Console.ReadLine();
 string[] splitInput1 = input1.Split(',');
 int i = int.Parse(splitInput1[0]);
