@@ -101,7 +101,7 @@ void ElementValue(int i, int j)
     }
     if (i<array.GetLength(0)|| j<array.GetLength(1)) 
     {
-     Console.WriteLine($"Значение элемента массива в позиции ([i,j]) равно {array [i,j]}");
+     Console.WriteLine($"Значение элемента массива в позиции ({i},{j}) равно {array [i,j]}.");
     }
 }
 
