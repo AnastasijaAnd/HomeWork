@@ -30,13 +30,13 @@ Main();
 void TaskDZ6z1()
 {
 int size = InputMessage($"Введите длину массива:  ");
-int [] arrey = MakeArrayEnterihgNumbers(size);
+int [] arrey = MakeArrayEnteringNumbers(size);
 PrintArray(arrey);
 int sum = SumPositiveNumbers(arrey);
 Console.WriteLine($"В массиве {sum} чисел больше нуля.");
 }
 
-int[] MakeArrayEnterihgNumbers(int size)
+int[] MakeArrayEnteringNumbers(int size)
 {
 int [] nambers = new int[size];
 for (int i = 0; i < size; i++)
