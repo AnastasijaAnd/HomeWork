@@ -99,7 +99,7 @@ void ElementValue(int i, int j)
     {
        Console.WriteLine($"В массиве нет значения для данной позиции."); 
     }
-    if (i<array.GetLength(0)|| j<array.GetLength(1)) 
+    if (i>=0 && i<array.GetLength(0)|| j>=0 && j<array.GetLength(1)) 
     {
      Console.WriteLine($"Значение элемента массива в позиции ({i},{j}) равно {array [i,j]}.");
     }
