@@ -95,7 +95,7 @@ void ElementValue(int i, int j)
 {
     int [,]array = CreateMatrix();
     PrintMatrix(array);
-    if (i>=array.GetLength(0)|| j>=array.GetLength(1))
+    if (i>=array.GetLength(0)||j>=array.GetLength(1))
     {
        Console.WriteLine($"В массиве нет значения для данной позиции."); 
     }
