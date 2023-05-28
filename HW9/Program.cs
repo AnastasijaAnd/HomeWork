@@ -76,3 +76,20 @@ int AkkermRec(int m, int n)
     else return AkkermRec(m - 1, AkkermRec(m, n - 1));
 }
 
+
+int InputMessage(string message)
+{
+    int result = IfNumber(message);
+    return result;
+}
+
+int IfNumber(string argument)
+{
+    Console.Write(argument);
+    int m;
+    while (!int.TryParse(Console.ReadLine(), out m))
+    {
+        Console.WriteLine("Это не число, поэтому повторите ввод, пожалуста:  ");
+   }
+    return m;
+}
